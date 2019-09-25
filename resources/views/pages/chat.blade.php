@@ -1,6 +1,6 @@
-<?php 
-	require_once 'partials/header_in.php';
- ?>
+@extends("../layouts/layout_in")
+
+@section("content")
 
 <section id="chat" class="container-fluid row">
 

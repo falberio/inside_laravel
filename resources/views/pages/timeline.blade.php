@@ -1,16 +1,13 @@
-<?php 
-	require_once 'partials/header_in.php';
- ?>
+@extends("../layouts/layout_in")
 
+@section("content")
 
 
 
 <section id="timeline" class="container-fluid row">
 
 
-<?php 
-	require_once 'partials/menu_left.php';
- ?>
+ @include("partials/menu_left")
 
 
 
@@ -19,7 +16,7 @@
 	<div class="post-new col-md-11 col-12">
 
 		<div class="wrapper-img col-md-1 col-2">
-				<img src="<?php echo $foto_usr; ?>" alt="">
+				<img src="<?php //echo $foto_usr; ?>" alt="">
 			</div>
 
 		<form id="nuevo_post" method="post" class="col-md-11 col-10">
@@ -38,9 +35,9 @@
 
 	
 
-	<?php 
-	require_once 'partials/posts_filters.php';
- 	?>
+	
+
+ 	 @include("partials/posts_filters")
 
 	<div class="posts col-md-11" id="recarga_posts">
 
@@ -85,6 +82,4 @@
 </section>
 
 
-<?php 
-	require_once 'partials/footer_scripts.php';
- ?>
+@endsection

@@ -1,6 +1,6 @@
-<?php 
-	require_once 'partials/header.php';
- ?>
+@extends("../layouts/layout_in")
+
+@section("content")
 
 
 <section id="register">

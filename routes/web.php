@@ -22,9 +22,6 @@ Route::get('/timeline', function () {
 Route::get('/home', 'homeController@index');
 
 
-Route::get('/timeline', 'timelineController@show');
-
-
 Route::get('/posts', 'PostsController@index');
 
 

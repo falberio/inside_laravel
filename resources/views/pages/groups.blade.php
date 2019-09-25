@@ -1,12 +1,10 @@
-<?php 
-	require_once 'partials/header_in.php';
- ?>
+@extends("../layouts/layout_in")
+
+@section("content")
 
 <section id="groups" class="container-fluid row">
 
-<?php 
-	require_once 'partials/menu_left.php';
- ?>
+@include("partials/menu_left")
 
 
 <div class="main col-lg-10 col-md-9 col-sm-9 col-12">
