@@ -1,0 +1,61 @@
+
+Areas
+	Grupos
+	Users
+		Conversation
+		Follows
+		Followers
+		Posts
+			Likes
+
+
+RUTAS
+
+GET /timeline
+	PostsController@index
+	Listar todos los posts de todos los usuarios
+
+GET /followers
+	FollowersController@index
+	Listar todos los followers
+	
+GET /follows
+	FollowsController@index
+	Listar todos los que lo siguen
+
+GET /conversation/{id}
+	ConversationsController@index
+	Historial de mensajes de la conversacion
+
+POST /conversation/{id}
+	Envio un mensaje a la conversacion
+
+GET /posts/new
+	Mostrar el formulario para crear un post
+
+POST /posts
+	Agregar el post creado
+	
+
+
+MODELOS
+
+User belongsTo Job
+User hasMany Posts
+User belongsToMany Follows (User)
+User belongsToMany Followers (User)
+User belongsToMany Group
+User belongsTo Area
+User hasMany Like
+
+Group hasMany User
+
+Post hasMany Like
+Post belongsTo User
+
+Like belongsTo User
+Like belongsTo Post
+
+Conversation {from_user_id, to_user_id}
+	hasMany Message {conversation_id}
+

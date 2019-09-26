@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
 	<!-- Archivos CSS locales -->
-	
+	<link rel="stylesheet" href="/css/styles.css">
 
 	<title>Inside</title>
 </head>

@@ -521,7 +521,7 @@ header .icon-toggle, header .icon-exit{
 }
 
 .menu-toggle{
-	display: none;
+	display: none !important;
 }
 
 

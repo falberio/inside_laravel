@@ -10,7 +10,7 @@
 <!-- Archivos locales -->
 
 
-<script src="{{ asset('resources/js/script.js') }}"></script>
+<script src="{{ asset('/js/script.js') }}"></script>
 <!-- {{ asset('../../resources/js/script.js') }} -->
 
 </body>

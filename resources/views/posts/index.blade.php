@@ -41,21 +41,21 @@
 
 	<div class="posts col-md-11" id="recarga_posts">
 
-		<?php foreach ($posts as $post): ?>
+		@foreach ($posts as $post)
 
 			<div class="post">
 				<div class="wrapper-img col-md-1 col-2 col-sm-2">
-					<a href="contact.php?user=<?php echo $post['id'];?>"><img src="<?php echo $post['photo'];?>" alt=""></a>
+					<a href="contact.php?user={{ $post->users->id }}"><img src="{{ $post->users->photo }}" alt=""></a>
 				</div>
 				
 				<div class="wrapper-txt col-md-11 col-10 col-sm-10">
 					<p class="post-info">
 						<a href="contact.php?user=<?php echo $post['id'];?>" class="post-user">
-							<?php echo $post['first_name'] . " " . $post['last_name'];?>		
+							{{ $post->users->first_name }}		
 						</a>
 
 						<span class="post-date">
-							<?php echo $post[3];?>
+							{{ $post->created_at }}	
 						</span>
 					</p>
 					<p class="post-message">
@@ -70,7 +70,7 @@
 				</div>
 				
 			</div>
-		<?php endforeach; ?>
+		@endforeach
 
 
 

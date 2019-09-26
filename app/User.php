@@ -52,4 +52,6 @@ class User extends Authenticatable
             User::class, 'follow_user', 'following_id', 'follower_id'
         );
     }
+
+    
 }

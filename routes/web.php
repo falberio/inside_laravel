@@ -19,9 +19,13 @@ Route::get('/timeline', function () {
     return view('pages/timeline');
 });
 
-Route::get('/home', 'homeController@index');
+Route::get('/homes', 'homeController@index');
 
 
-Route::get('/posts', 'PostsController@index');
+Route::any('/posts', 'PostsController@index')->name('posts');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
