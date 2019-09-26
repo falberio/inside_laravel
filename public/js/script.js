@@ -1,5 +1,3 @@
-alert("Funciona!");
-
 $( document ).ready(function() {
 
 

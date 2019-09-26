@@ -26,12 +26,11 @@
 	<div class="menu col-md-6">
 		<nav>
 			<ul>
-				<li><a href="timeline.php"><p>TIMELINE</p></a></li>
-				<li><a href="contacts.php"><p>CONTACTOS</p></a></li>
-				<li><a href="groups.php"><p>GRUPOS</p></a></li>
-				<li><a href="wiki.php"><p>WIKI</p></a></li>
-				<li><a href="chat.php"><p>CHAT</p></a></li>
-				<li class="btn-menu-profile"><img class="user" src=" " alt=""></li>
+				<li><a href="posts"><p>TIMELINE</p></a></li>
+				<li><a href="contacts"><p>CONTACTOS</p></a></li>
+				<li><a href="groups"><p>GRUPOS</p></a></li>
+				<li><a href="chat"><p>CHAT</p></a></li>
+				<li class="btn-menu-profile"><img class="user" src="{{Auth::user()->photo}}" alt=""></li>
 				<li>
 					<div id="wrp-change-theme">
 						<div id="btn-change-theme"></div>

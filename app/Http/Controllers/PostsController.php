@@ -14,10 +14,17 @@ class PostsController extends Controller
      */
     public function index()
     {
+        // $user = Auth::user();
+        // $photo = Auth::photo();
+
         $posts = Post::all();
         return view('posts.index', ['posts' => $posts]);
+
+
         
     }
+
+    
 
     /**
      * Show the form for creating a new resource.

@@ -12,11 +12,17 @@
 
 
 <div class="main col-lg-10 col-md-9 col-sm-9 col-12">
+
+	
 	
 	<div class="post-new col-md-11 col-12">
 
 		<div class="wrapper-img col-md-1 col-2">
-				<img src="<?php ?>" alt="">
+				<img src="{{Auth::user()->photo}}" alt="">
+				
+				
+				
+
 			</div>
 
 		<form id="nuevo_post" method="post" class="col-md-11 col-10">

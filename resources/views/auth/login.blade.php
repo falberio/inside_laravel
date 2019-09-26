@@ -14,13 +14,13 @@
         </div>
 
 
-         <form method="POST" action="{{ route('posts') }}" class="formulario col-md-5">
+         <form method="POST" action="{{ route('login') }}" class="formulario col-md-5">
             @csrf
             <input type="text" name="email" placeholder="Usuario">
             <input type="password" name="password" placeholder="Contraseña">
             
             <button class="btn-azul-claro">INICIAR SESIÓN
-                {{ __('Login') }}
+                
             </button>
             <a href="register.php" class="btn-registro btn-azul-claro">REGISTRARME</a>
         </form>

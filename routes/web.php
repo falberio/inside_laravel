@@ -19,13 +19,11 @@ Route::get('/timeline', function () {
     return view('pages/timeline');
 });
 
-Route::get('/homes', 'homeController@index');
-
 
 Route::any('/posts', 'PostsController@index')->name('posts');
 
-
+Route::get('/faqs', 'FaqsController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/index', 'HomeController@index')->name('index');

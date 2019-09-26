@@ -14,7 +14,7 @@
 				<div class="list col-md-3 col-12">
 					<ul>
 						<li>INSIDE</li>
-						<li><a href="#">Preguntas frecuentes</a></li>
+						<li><a href="faqs">Preguntas frecuentes</a></li>
 						<li><a href="#nosotros">Nosotros</a></li>
 						<li><a href="#clientes">Clientes</a></li>
 						<li><a href="#servicios">Servicios</a></li>
