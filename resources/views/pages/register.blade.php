@@ -17,27 +17,27 @@
 				<input type="email" name="email" id="email" required autofocus placeholder="Email" maxlength="40" value="<?php if(isset($email)) echo $email ;?>">
 				<div id="validacionEmail"></div>
 			</div>
-			<!-- <?php echo $errorEmail ?> -->
+			
 			<div class="item">
 				<input type="text" name="first_name" id="nombre" maxlength="24" required  placeholder="Nombre" value="<?php if(isset($nombre)) echo $nombre ;?>">
 				<div id="validacionNombre"></div>
 			</div>
-			<!-- <?php echo $errorNombre ?> -->
+			
 			<div class="item">
 				<input type="text" name="last_name" id="apellido" maxlength="24" required  placeholder="Apellido" value="<?php if(isset($apellido)) echo $apellido ;?>">
 				<div id="validacionApellido"></div>
 			</div>
-			<!-- <?php echo $errorApellido ?> -->
+			
 			<div class="item">
 				<input type="password" name="password" maxlength="18" id="password" required  placeholder="Contraseña">
 				<div id="validacionPassword"></div>
 			</div>
-			<!-- <?php echo $errorPassword ?> -->
+			
 			<div class="item">
 				<input type="password" name="password2" maxlength="18" id="password2" required  placeholder="Repetir contraseña">
 				<div id="validacionPassword2"></div>
 			</div>
-			<!-- <?php echo $errorPassword2 ?> -->
+			
 			
 			<div class="actions">
 				<span class="btn-siguiente"><i class="fas fa-arrow-circle-right disabled" id="btn-siguiente"></i></span>
@@ -110,6 +110,6 @@
 </section>
 
 
-<?php 
-	require_once 'partials/footer.php';
- ?>
+@endsection
+
+@include("partials/footer_scripts")

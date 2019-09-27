@@ -19,7 +19,7 @@
 			<input type="password" name="password" placeholder="Contraseña">
 			
 			<button class="btn-azul-claro">INICIAR SESIÓN</button>
-			<a href="register.php" class="btn-registro btn-azul-claro">REGISTRARME</a>
+			<a href="register" class="btn-registro btn-azul-claro">REGISTRARME</a>
 		</form>
 
 

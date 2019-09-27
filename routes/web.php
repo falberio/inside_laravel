@@ -15,14 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/timeline', function () {
-    return view('pages/timeline');
-});
 
 
 Route::any('/posts', 'PostsController@index')->name('posts');
 
+Route::get('/contacts', 'UserController@index')->name('posts');
+
 Route::get('/faqs', 'FaqsController@index');
+
+Route::get('/register', 'RegisterController@index');
+
+Route::get('/chat', 'ChatController@index');
 
 Auth::routes();
 
