@@ -33,7 +33,11 @@
 				<p class="info">
 					<a href="contact.php" class="user-name">{{ $user->first_name . " " . $user->last_name}}</a>
 				</p>
-				<p class="job-title">Gerente<span class="separator">|</span><span class="area"><a href="group.php">Departamento de Finanzas</a></span></p>
+				<p class="job-title">
+					{{ $user->jobs->name }}
+					<span class="separator">|</span><span class="area"><a href="group.php">
+					{{ $user->areas->name }}
+				</a></span></p>
 				
 				<div class="actions">
 					<i class="fas fa-envelope"></i>
@@ -60,4 +64,3 @@
 
 @endsection
 
-@include("partials/footer_scripts")

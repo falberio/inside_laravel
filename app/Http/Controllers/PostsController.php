@@ -14,14 +14,16 @@ class PostsController extends Controller
      */
     public function index()
     {
-        // $user = Auth::user();
-        // $photo = Auth::photo();
-
         $posts = Post::all();
         return view('posts.index', ['posts' => $posts]);
 
+    }
 
-        
+    public function showProfile()
+    {
+        $posts = Post::all();
+        return view('pages.profile', ['posts' => $posts]);
+
     }
 
     

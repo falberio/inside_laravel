@@ -22,12 +22,13 @@
 
 
 <header class="header-in container-fluid row">
-	<div class="logo col-md-2 col-sm-4 col-4"><a href="timeline.php">INSIDE</a></div>
+	<div class="logo col-md-2 col-sm-4 col-4"><a href="posts">INSIDE</a></div>
 	<div class="menu col-md-6">
 		<nav>
 			<ul>
 				<li><a href="posts"><p>TIMELINE</p></a></li>
 				<li><a href="contacts"><p>CONTACTOS</p></a></li>
+				<li><a href="areas"><p>AREAS</p></a></li>
 				<li><a href="groups"><p>GRUPOS</p></a></li>
 				<li><a href="chat"><p>CHAT</p></a></li>
 				<li class="btn-menu-profile"><img class="user" src="{{Auth::user()->photo}}" alt=""></li>
@@ -54,9 +55,9 @@
 	<div class="menu-profile">
 		<nav>
 			<ul>
-				<li><a href="profile.php">Perfil</a></li>
-				<li><a href="profile_edit.php">Editar</a></li>
-				<li><a href="admin/cerrar.php">Cerrar sesión</a></li>
+				<li><a href="profile">Perfil</a></li>
+				<li><a href="profile_edit">Editar</a></li>
+				<li><a href="admin/cerrar">Cerrar sesión</a></li>
 			</ul>
 		</nav>
 	</div>

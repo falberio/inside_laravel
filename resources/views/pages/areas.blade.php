@@ -23,21 +23,21 @@
 	<div class="container groups col-md-11">
 	
 		
-		@foreach ($groups as $group)
+		@foreach ($areas as $area)
 
 			<div class="group">
 			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="group"><img src="{{ $group->photo }}" alt=""></a>
+				<a href="area"><img src="{{ $area->photo }}" alt=""></a>
 			</div>
 			
 			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
 				<p class="info">
-					<a href="group" class="user-name">
-					{{ $group->name }}	
+					<a href="area" class="user-name">
+					{{ $area->name }}	
 				</a>
 				</p>
 				<p class="description">
-					{{ $group->description }}
+					{{ $area->description }}
 					<span class="separator">|</span><span class="members"><a href="rrhh.php">18 <i class="fas fa-users"></i></a></span></p>
 
 

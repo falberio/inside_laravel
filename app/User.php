@@ -53,5 +53,15 @@ class User extends Authenticatable
         );
     }
 
-    
+    public function areas(){
+        return $this -> belongsTo(
+            Area::class, 'area_id'
+        );
+    }
+
+    public function jobs(){
+        return $this -> belongsTo(
+            Job::class, 'job_id'
+        );
+    }
 }

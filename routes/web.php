@@ -19,7 +19,17 @@ Route::get('/', function () {
 
 Route::any('/posts', 'PostsController@index')->name('posts');
 
+Route::get('/profile', 'PostsController@showProfile');
+
 Route::get('/contacts', 'UserController@index')->name('posts');
+
+Route::get('/areas', 'AreaController@index')->name('areas');
+
+Route::get('/area/{id}', 'AreaController@showArea');
+
+Route::get('/groups', 'GroupController@index')->name('groups');
+
+Route::get('/group/{id}', 'groupController@showGroup');
 
 Route::get('/faqs', 'FaqsController@index');
 

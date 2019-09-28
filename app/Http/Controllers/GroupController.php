@@ -14,7 +14,9 @@ class GroupController extends Controller
      */
     public function index()
     {
-        //
+        $groups = Group::all();
+        return view('pages.groups', ['groups' => $groups]);
+
     }
 
     /**

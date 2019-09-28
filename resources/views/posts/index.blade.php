@@ -57,7 +57,7 @@
 				<div class="wrapper-txt col-md-11 col-10 col-sm-10">
 					<p class="post-info">
 						<a href="contact.php?user=<?php echo $post['id'];?>" class="post-user">
-							{{ $post->users->first_name }}		
+							{{ $post->users->first_name . " " . $post->users->last_name}}		
 						</a>
 
 						<span class="post-date">

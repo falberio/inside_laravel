@@ -14,12 +14,12 @@
 	<div class="group col-md-11">
 
 		<div class="wrapper-img col-md-2 col-2">
-			<img src="<?php echo $area_foto ; ?>" alt="">
+			<img src="../{{ $area->photo }}" alt="">
 		</div>
 
 		<div class="wrapper-txt col-md-10 col-10">
-			<p class="name"><?php echo $area_name ; ?></p>
-			<p class="description"><?php echo $area_description ; ?></p>
+			<p class="name">{{ $area->name }}</p>
+			<p class="description">{{ $area->description }}</p>
 			<a href="" class="members">36 <i class="fas fa-users"></i></a>
 			<div class="actions">
 				<i class="fas fa-envelope"></i>
@@ -133,6 +133,4 @@
 
 </section>
 
-<?php 
-	require_once 'partials/footer_scripts.php';
- ?>
+@endsection
