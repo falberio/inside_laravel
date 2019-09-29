@@ -14,9 +14,9 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::all()->sortByDesc('updated_at');
         return view('posts.index', ['posts' => $posts]);
-
+       
     }
 
     public function recargarPosts(Request $form)
@@ -40,6 +40,8 @@ class PostsController extends Controller
     }
 
     
+
+
 
     /**
      * Show the form for creating a new resource.
