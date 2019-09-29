@@ -39,8 +39,6 @@ Route::get('/group/{id}', 'groupController@showGroup');
 
 Route::get('/faqs', 'FaqsController@index');
 
-Route::get('/register', 'RegisterController@index');
-
 Route::get('/chat', 'ChatController@index');
 
 Auth::routes();
