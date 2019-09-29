@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Post;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -16,6 +17,14 @@ class UserController extends Controller
     {
         $users = User::all();
         return view('pages/contacts', ['users' => $users]);
+    }
+
+    public function showUser($id)
+    {
+        $user = User::find($id);
+        $posts = Post::where('user_id',$id)->get();
+        return view('pages.user', ['user' => $user, 'posts' => $posts]);
+
     }
 
     /**

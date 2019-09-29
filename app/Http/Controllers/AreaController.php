@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Area;
+use App\User;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -22,9 +23,12 @@ class AreaController extends Controller
     public function showArea($id)
     {
         $area = Area::find($id);
-        return view('pages.area', ['area' => $area]);
+        $users = User::where('area_id',$id)->get();
+        return view('pages.area', ['area' => $area, 'users' => $users]);
 
     }
+
+    
 
     /**
      * Show the form for creating a new resource.

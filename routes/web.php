@@ -23,6 +23,8 @@ Route::get('/profile', 'PostsController@showProfile');
 
 Route::get('/contacts', 'UserController@index')->name('posts');
 
+Route::get('/user/{id}', 'UserController@showUser');
+
 Route::get('/areas', 'AreaController@index')->name('areas');
 
 Route::get('/area/{id}', 'AreaController@showArea');

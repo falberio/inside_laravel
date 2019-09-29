@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Group extends Model
 {
     public function users(){
-    	return $this -> hasMany(
-    		User::class
-    	);
+    	
+
+    	return $this->belongsToMany('App\Group', 'group_user', 'user_id', 'group_id');
     }
 }

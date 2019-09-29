@@ -26,12 +26,12 @@
 		
 		<div class="contact">
 			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="contact.php"><img src="{{ $user->photo }}	" alt=""></a>
+				<a href="user/{{ $user->id }}"><img src="{{ $user->photo }}	" alt=""></a>
 			</div>
 			
 			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
 				<p class="info">
-					<a href="contact.php" class="user-name">{{ $user->first_name . " " . $user->last_name}}</a>
+					<a href="user/{{ $user->id }}" class="user-name">{{ $user->first_name . " " . $user->last_name}}</a>
 				</p>
 				<p class="job-title">
 					{{ $user->jobs->name }}

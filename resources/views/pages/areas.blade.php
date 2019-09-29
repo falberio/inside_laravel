@@ -27,12 +27,12 @@
 
 			<div class="group">
 			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="area"><img src="{{ $area->photo }}" alt=""></a>
+				<a href="area/{{ $area->id }}"><img src="{{ $area->photo }}" alt=""></a>
 			</div>
 			
 			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
 				<p class="info">
-					<a href="area" class="user-name">
+					<a href="area/{{ $area->id }}" class="user-name">
 					{{ $area->name }}	
 				</a>
 				</p>

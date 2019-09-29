@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Group;
+use App\User;
 use Illuminate\Http\Request;
 
 class GroupController extends Controller
@@ -18,6 +19,16 @@ class GroupController extends Controller
         return view('pages.groups', ['groups' => $groups]);
 
     }
+
+    public function showGroup($id)
+    {
+        $group = Group::find($id);
+        $users = User::where('group_id',$id)->get();
+        return view('pages.group', ['group' => $group]);
+
+    }
+
+    
 
     /**
      * Show the form for creating a new resource.
