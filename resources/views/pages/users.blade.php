@@ -35,7 +35,7 @@
 				</p>
 				<p class="job-title">
 					{{ $user->jobs->name }}
-					<span class="separator">|</span><span class="area"><a href="group.php">
+					<span class="separator">|</span><span class="area"><a href="area/{{ $user->area_id }}">
 					{{ $user->areas->name }}
 				</a></span></p>
 				

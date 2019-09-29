@@ -392,46 +392,46 @@ else{
 
 /////////////////////////////  CARGAR NUEVO POST  /////////////////////////////
 
-$("#nuevo_post").submit(nuevo_post)
+// $("#nuevo_post").submit(nuevo_post)
 
 
-   function nuevo_post(e){
+//    function nuevo_post(e){
 
-   e.preventDefault();
-	var mensaje = new FormData($("#nuevo_post")[0])
+//    e.preventDefault();
+// 	var mensaje = new FormData($("#nuevo_post")[0])
 
-	var contenedor = $("#wrapper-loader");
-	contenedor.css("visibility","visible");
-	contenedor.css("opacity","1");
+// 	var contenedor = $("#wrapper-loader");
+// 	contenedor.css("visibility","visible");
+// 	contenedor.css("opacity","1");
 	
 
-   $.ajax({
-            url         : 'timeline.php',
-            type        : 'POST',
-            data        : mensaje, 
-            processData : false,
-            contentType : false,
-            success: function(response)
-            {
+//    $.ajax({
+//             url         : 'posts',
+//             type        : 'POST',
+//             data        : mensaje, 
+//             processData : false,
+//             contentType : false,
+//             success: function(response)
+//             {
             	
 
-               $("#recarga_posts").load('recargar_posts.php');
-               $("#message").val("");
+//                $("#recarga_posts").load('posts');
+//                $("#message").val("");
                	
-               	contenedor.css("visibility","hidden");
-				contenedor.css("opacity","0");
+//                	contenedor.css("visibility","hidden");
+// 				contenedor.css("opacity","0");
 
-               return false;
+//                return false;
 
-            },
-            error : function(response)
-            {
-                alert(response)
-            }
+//             },
+//             error : function(response)
+//             {
+//                 alert(response)
+//             }
    
-})
+// })
 
-}
+// }
 
 
 

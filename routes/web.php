@@ -19,9 +19,13 @@ Route::get('/', function () {
 
 Route::any('/posts', 'PostsController@index')->name('posts');
 
+Route::post('/posts', 'PostsController@recargarPosts')->name('posts');
+
 Route::get('/profile', 'PostsController@showProfile');
 
-Route::get('/contacts', 'UserController@index')->name('posts');
+Route::get('/contacts', 'UserController@showUsers')->name('posts');
+
+Route::get('/users', 'UserController@showUsers')->name('posts');
 
 Route::get('/user/{id}', 'UserController@showUser');
 
@@ -42,3 +46,5 @@ Route::get('/chat', 'ChatController@index');
 Auth::routes();
 
 Route::get('/index', 'HomeController@index')->name('index');
+
+Route::get('/logout', 'Auth\LoginController@logout');

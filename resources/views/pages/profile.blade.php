@@ -19,7 +19,7 @@
 				{{Auth::user()->first_name . " " . Auth::user()->last_name}}
 			</p>
 			<p class="job-title">Aprendiz</p>
-			<p class="area"><a href="desarrollo.php">Nombre del Area</a></p>
+			<p class="area"><a href="area/{{Auth::user()->area_id}}">{{Auth::user()->areas->name}}</a></p>
 			<div class="actions">
 				<a href="profile_edit.php" class="btn-azul-claro">Editar perfil</a>
 			</div>

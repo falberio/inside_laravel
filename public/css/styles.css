@@ -1635,6 +1635,10 @@ header .icon-toggle, header .icon-exit{
 	color: var(--gris-oscuro);
 }
 
+#timeline .main .post-new .input_hidden{
+	display: none;
+} 
+
 #timeline .main .post-new form button{
 	padding: 20px;
 	height: 60px;

@@ -13,10 +13,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function showUsers()
     {
         $users = User::all();
-        return view('pages/contacts', ['users' => $users]);
+        return view('pages/users', ['users' => $users]);
     }
 
     public function showUser($id)

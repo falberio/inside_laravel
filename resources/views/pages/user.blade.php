@@ -12,7 +12,7 @@
 	<div class="user col-md-11 col-12">
 
 		<div class="wrapper-img col-md-2 col-2">
-			<img src="{{ $user->photo }}" alt="">
+			<img src="../{{ $user->photo }}" alt="">
 		</div>
 
 		<div class="wrapper-txt col-md-10 col-10">
@@ -20,7 +20,7 @@
 				{{ $user->first_name . " " . $user->last_name}}
 			</p>
 			<p class="job-title">Aprendiz</p>
-			<p class="area"><a href="">{{ $user->areas->name }}</a></p>
+			<p class="area"><a href="../area/{{ $user->area_id }}">{{ $user->areas->name }}</a></p>
 			<div class="actions">
 				<i class="fas fa-envelope"></i>
 				<i class="fas fa-comment"></i>
@@ -38,7 +38,7 @@
 
 			<div class="post">
 				<div class="wrapper-img col-md-1 col-2 col-sm-2">
-					<a href=""><img src="{{ $post->users->photo }}" alt=""></a>
+					<a href=""><img src="../{{ $post->users->photo }}" alt=""></a>
 				</div>
 				
 				<div class="wrapper-txt col-md-11 col-10 col-sm-10">

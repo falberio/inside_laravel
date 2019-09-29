@@ -27,7 +27,7 @@
 		<nav>
 			<ul>
 				<li><a href="posts"><p>TIMELINE</p></a></li>
-				<li><a href="contacts"><p>CONTACTOS</p></a></li>
+				<li><a href="users"><p>CONTACTOS</p></a></li>
 				<li><a href="areas"><p>AREAS</p></a></li>
 				<li><a href="groups"><p>GRUPOS</p></a></li>
 				<li><a href="chat"><p>CHAT</p></a></li>
@@ -57,7 +57,7 @@
 			<ul>
 				<li><a href="profile">Perfil</a></li>
 				<li><a href="profile_edit">Editar</a></li>
-				<li><a href="admin/cerrar">Cerrar sesión</a></li>
+				<li><a href="logout">Cerrar sesión</a></li>
 			</ul>
 		</nav>
 	</div>

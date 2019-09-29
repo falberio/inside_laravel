@@ -19,6 +19,19 @@ class PostsController extends Controller
 
     }
 
+    public function recargarPosts(Request $form)
+    {
+        $post = new Post();
+        $post->message = $form["message"];
+        $post->user_id = $form["user_id"];
+        $post->save();
+
+        return redirect("posts");
+
+    }
+
+
+
     public function showProfile()
     {
         $posts = Post::all();
