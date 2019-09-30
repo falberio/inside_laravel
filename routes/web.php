@@ -17,15 +17,20 @@ Route::get('/', function () {
 
 
 
+
 Route::any('/posts', 'PostsController@index')->name('posts');
 
 Route::post('/posts', 'PostsController@recargarPosts')->name('posts');
 
 Route::get('/profile', 'PostsController@showProfile');
 
-Route::get('/contacts', 'UserController@showUsers')->name('posts');
+Route::post('/profile', 'PostsController@showProfile');
 
-Route::get('/users', 'UserController@showUsers')->name('posts');
+Route::get('/profile_edit', 'ProfileController@show');
+
+Route::get('/contacts', 'UserController@showUsers')->name('users');
+
+Route::get('/users', 'UserController@showUsers')->name('users');
 
 Route::get('/user/{id}', 'UserController@showUser');
 
@@ -36,6 +41,10 @@ Route::get('/area/{id}', 'AreaController@showArea');
 Route::get('/groups', 'GroupController@index')->name('groups');
 
 Route::get('/group/{id}', 'groupController@showGroup');
+
+Route::get('/wiki', 'WikiController@show');
+
+Route::get('/article/{id}', 'WikiController@showArticle');
 
 Route::get('/faqs', 'FaqsController@index');
 

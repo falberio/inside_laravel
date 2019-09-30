@@ -22,17 +22,17 @@
 
 
 <header class="header-in container-fluid row">
-	<div class="logo col-md-2 col-sm-4 col-4"><a href="posts">INSIDE</a></div>
+	<div class="logo col-md-2 col-sm-4 col-4"><a href="../posts">INSIDE</a></div>
 	<div class="menu col-md-6">
 		<nav>
 			<ul>
-				<li><a href="posts"><p>TIMELINE</p></a></li>
-				<li><a href="users"><p>CONTACTOS</p></a></li>
-				<li><a href="areas"><p>AREAS</p></a></li>
-				<li><a href="groups"><p>GRUPOS</p></a></li>
-				<li><a href="wiki"><p>WIKI</p></a></li>
-				<li><a href="chat"><p>CHAT</p></a></li>
-				<li class="btn-menu-profile"><img class="user" src="{{Auth::user()->photo}}" alt="">.</li>
+				<li><a href="../posts"><p>TIMELINE</p></a></li>
+				<li><a href="../users"><p>CONTACTOS</p></a></li>
+				<li><a href="../areas"><p>AREAS</p></a></li>
+				<li><a href="../groups"><p>GRUPOS</p></a></li>
+				<li><a href="../wiki"><p>WIKI</p></a></li>
+				<li><a href="../chat"><p>CHAT</p></a></li>
+				<li class="btn-menu-profile"><img class="user" src="../{{Auth::user()->photo}}" alt=""></li>
 				<li>
 					<div id="wrp-change-theme">
 						<div id="btn-change-theme"></div>
@@ -56,9 +56,9 @@
 	<div class="menu-profile">
 		<nav>
 			<ul>
-				<li><a href="profile">Perfil</a></li>
-				<li><a href="profile_edit">Editar</a></li>
-				<li><a href="logout">Cerrar sesión</a></li>
+				<li><a href="../profile">Perfil</a></li>
+				<li><a href="../profile_edit">Editar</a></li>
+				<li><a href="../logout">Cerrar sesión</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -73,13 +73,13 @@
 	<div class="menu-toggle container-fluid row">
 		<nav>
 			<ul>
-				<li><div class="container"><a href="timeline.php">TIMELINE</a></div></li>
-				<li><div class="container"><a href="contacts.php">CONTACTOS</a></div></li>
-				<li><div class="container"><a href="groups.php">GRUPOS</a></div></li>
-				<li><div class="container"><a href="wiki.php">WIKI</a></div></li>
-				<li><div class="container"><a href="chat.php">CHAT</a></div></li>
-				<li><div class="container"><a href="profile.php">PERFIL</a></div></li>
-				<li><div class="container"><a href="index.php">INSIDE</a></div></li>
+				<li><div class="container"><a href="../posts">TIMELINE</a></div></li>
+				<li><div class="container"><a href="../contacts">CONTACTOS</a></div></li>
+				<li><div class="container"><a href="../groups">GRUPOS</a></div></li>
+				<li><div class="container"><a href="../wiki">WIKI</a></div></li>
+				<li><div class="container"><a href="../chat">CHAT</a></div></li>
+				<li><div class="container"><a href="../profile">PERFIL</a></div></li>
+				<li><div class="container"><a href="../index">INSIDE</a></div></li>
 			</ul>
 		</nav>
 	</div>

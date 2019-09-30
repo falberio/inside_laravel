@@ -18,14 +18,18 @@
 					<p><a href=""><i class="fas fa-camera"></i>Cambiar foto</a></p>
 					<p><a href=""><i class="fas fa-camera"></i></a></p>
 				</div>
-				<img src="<?php echo $foto_usr; ?>" alt="">
+				<img src="{{Auth::user()->photo}}" alt="">
 			</div>
 
 			<div class="wrapper-txt">
 				<ul>
-					<li><?php echo $nombre_usr; ?><a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
-					<li>Desarrollo<a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
-					<li><a href="">Aprendiz</a><a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
+					<li>
+						{{Auth::user()->first_name . " " . Auth::user()->last_name}}
+						<a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
+					<li>
+						{{Auth::user()->areas->name}}
+						<a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
+					<li><a href="">{{Auth::user()->jobs->name}}</a><a class="edit" href=""><i class="fas fa-pencil-alt"></i></a></li>
 				</ul>
 			</div>
 		
@@ -48,13 +52,13 @@
 				
 				<div class="dato">
 					<p class="label col-md-4">Nombre</p>
-					<p class="value col-md-6"><?php echo $nombre_usr; ?></p>
+					<p class="value col-md-6">{{Auth::user()->first_name}}</p>
 					<a href=""><i class="fas fa-pencil-alt"></i>Editar</a>
 				</div>
 
 				<div class="dato">
 					<p class="label col-md-4">Apellido</p>
-					<p class="value col-md-6"><?php echo $apellido_usr; ?></p>
+					<p class="value col-md-6">{{Auth::user()->last_name}}</p>
 					<a href=""><i class="fas fa-pencil-alt"></i>Editar</a>
 				</div>
 
@@ -82,7 +86,7 @@
 				
 				<div class="dato">
 					<p class="label col-md-4">Teléfono:</p>
-					<p class="value col-md-6"><?php echo $telefono_usr; ?></p>
+					<p class="value col-md-6">{{Auth::user()->phone}}</p>
 					<a href=""><i class="fas fa-pencil-alt"></i>Editar</a>
 				</div>
 
@@ -94,7 +98,7 @@
 
 				<div class="dato">
 					<p class="label col-md-4">Email</p>
-					<p class="value col-md-6"><?php echo $email_usr; ?></p>
+					<p class="value col-md-6">{{Auth::user()->email}}</p>
 					<a href=""><i class="fas fa-pencil-alt"></i>Editar</a>
 				</div>
 
@@ -192,6 +196,4 @@
 
 </section>
 
-<?php 
-	require_once 'partials/footer_scripts.php';
- ?>
+@endsection

@@ -34,9 +34,9 @@
 					<a href="user/{{ $user->id }}" class="user-name">{{ $user->first_name . " " . $user->last_name}}</a>
 				</p>
 				<p class="job-title">
-					{{ $user->jobs->name }}
+					Pasante
 					<span class="separator">|</span><span class="area"><a href="area/{{ $user->area_id }}">
-					{{ $user->areas->name }}
+					Desarrollo
 				</a></span></p>
 				
 				<div class="actions">

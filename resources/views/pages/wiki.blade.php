@@ -28,39 +28,26 @@
 
 	<div class="container posts col-md-11">
 		
-		<div class="post">
-			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
-			</div>
-			
-			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
-				<p class="post-info">
-					<a href="profe_eze.php" class="post-user">Profe Eze</a>
-					<span class="post-date">21 de Julio de 2019 | 09:35</span>
-				</p>
-				<p class="post-message"><a href="article.php">¿Cómo generar un reporte automaticamente en Excel?</a></p>
-				
-				<div class="post-actions">
-					<i class="fas fa-thumbs-up"></i>
-					<i class="fas fa-reply"></i>
-					<i class="fas fa-share-alt"></i>
-					<i class="fas fa-star"></i>
-				</div>
-			</div>
-			
-		</div>
 		
+		@foreach ($articles as $article)
+
 		<div class="post">
 			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
+				<a href="user/{{ $article->user_id }}"><img src="{{ $article->users->photo }}" alt=""></a>
 			</div>
 			
 			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
 				<p class="post-info">
-					<a href="profe_eze.php" class="post-user">Profe Eze</a>
-					<span class="post-date">21 de Julio de 2019 | 09:35</span>
+					<a href="user/{{ $article->user_id }}" class="post-user">
+					{{ $article->users->first_name . " " . $article->users->last_name}}
+				</a>
+					<span class="post-date">
+					{{ $article->created_at }}
+				</span>
 				</p>
-				<p class="post-message"><a href="article.php">¿Cómo generar un reporte automaticamente en Excel?</a></p>
+				<p class="post-message"><a href="article/{{ $article->id }}">
+				{{ $article->title }}
+			</a></p>
 				
 				<div class="post-actions">
 					<i class="fas fa-thumbs-up"></i>
@@ -72,71 +59,9 @@
 			
 		</div>
 
-		<div class="post">
-			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
-			</div>
-			
-			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
-				<p class="post-info">
-					<a href="profe_eze.php" class="post-user">Profe Eze</a>
-					<span class="post-date">21 de Julio de 2019 | 09:35</span>
-				</p>
-				<p class="post-message"><a href="article.php">¿Cómo generar un reporte automaticamente en Excel?</a></p>
-				
-				<div class="post-actions">
-					<i class="fas fa-thumbs-up"></i>
-					<i class="fas fa-reply"></i>
-					<i class="fas fa-share-alt"></i>
-					<i class="fas fa-star"></i>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="post">
-			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
-			</div>
-			
-			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
-				<p class="post-info">
-					<a href="profe_eze.php" class="post-user">Profe Eze</a>
-					<span class="post-date">21 de Julio de 2019 | 09:35</span>
-				</p>
-				<p class="post-message"><a href="article.php">¿Cómo generar un reporte automaticamente en Excel?</a></p>
-				
-				<div class="post-actions">
-					<i class="fas fa-thumbs-up"></i>
-					<i class="fas fa-reply"></i>
-					<i class="fas fa-share-alt"></i>
-					<i class="fas fa-star"></i>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="post">
-			<div class="wrapper-img col-lg-1 col-md-2 col-sm-2 col-2">
-				<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
-			</div>
-			
-			<div class="wrapper-txt col-lg-11 col-md-10 col-sm-10 col-10">
-				<p class="post-info">
-					<a href="profe_eze.php" class="post-user">Profe Eze</a>
-					<span class="post-date">21 de Julio de 2019 | 09:35</span>
-				</p>
-				<p class="post-message"><a href="article.php">¿Cómo generar un reporte automaticamente en Excel?</a></p>
-				
-				<div class="post-actions">
-					<i class="fas fa-thumbs-up"></i>
-					<i class="fas fa-reply"></i>
-					<i class="fas fa-share-alt"></i>
-					<i class="fas fa-star"></i>
-				</div>
-			</div>
-			
-		</div>
+		@endforeach
+		
+		
 
 
 	</div>
@@ -146,6 +71,4 @@
 </section>
 
 
-<?php 
-	require_once 'partials/footer_scripts.php';
- ?>
+@endsection

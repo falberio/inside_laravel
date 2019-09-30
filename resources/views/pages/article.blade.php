@@ -1,4 +1,4 @@
-@extends("../layouts/layout_in")
+@extends("../layouts/layout_inside")
 
 @section("content")
 
@@ -17,17 +17,23 @@
 			<div class="info">
 				
 				<div class="author">
-					<a href="profe_eze.php"><img src="img/eze.png" alt=""></a>
-					<a href="profe_eze.php">Profe Eze</a>
+					<a href="../user/{{ $article->user_id }}"><img src="../{{ $article->users->photo }}" alt=""></a>
+					<a href="../user/{{ $article->user_id }}">
+					{{ $article->users->first_name . " " . $article->users->last_name}}
+				</a>
 				</div>
-				<span class="date">21 de Julio de 2019</span>
+				<span class="date">
+					{{ $article->created_at }}
+				</span>
 				<span class="actions">
 					<i class="fas fa-thumbs-up"></i>
 					<i class="fas fa-reply"></i>
 					<i class="fas fa-share-alt"></i>
 					<i class="fas fa-star"></i>
 				</span>
-				<h4 class="title">¿Cómo generar un reporte automaticamente en Excel?</h4>
+				<h4 class="title">
+				{{ $article->title }}
+			</h4>
 
 			</div>
 			
@@ -49,6 +55,4 @@
 </section>
 
 
-<?php 
-	require_once 'partials/footer_scripts.php';
- ?>
+@endsection

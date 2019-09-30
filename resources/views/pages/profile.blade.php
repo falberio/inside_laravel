@@ -21,7 +21,7 @@
 			<p class="job-title">Aprendiz</p>
 			<p class="area"><a href="area/{{Auth::user()->area_id}}">{{Auth::user()->areas->name}}</a></p>
 			<div class="actions">
-				<a href="profile_edit.php" class="btn-azul-claro">Editar perfil</a>
+				<a href="profile_edit" class="btn-azul-claro">Editar perfil</a>
 			</div>
 		</div>
 	</div>
@@ -36,12 +36,12 @@
 
 			<div class="post">
 				<div class="wrapper-img col-md-1 col-2 col-sm-2">
-					<a href="contact.php?user=<?php echo $post['id'];?>"><img src="{{ $post->users->photo }}	" alt=""></a>
+					<a href="user/{{ $post->user_id }}"><img src="{{ $post->users->photo }}	" alt=""></a>
 				</div>
 				
 				<div class="wrapper-txt col-md-11 col-10 col-sm-10">
 					<p class="post-info">
-						<a href="contact.php?user=<?php echo $post['id'];?>" class="post-user">
+						<a href="user/{{ $post->user_id }}" class="post-user">
 							{{ $post->users->first_name . " " . $post->users->last_name}}			
 						</a>
 

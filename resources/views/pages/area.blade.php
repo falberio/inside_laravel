@@ -1,4 +1,4 @@
-@extends("../layouts/layout_in")
+@extends("../layouts/layout_inside")
 
 @section("content")
 

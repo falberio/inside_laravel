@@ -22,7 +22,7 @@ class UserController extends Controller
     public function showUser($id)
     {
         $user = User::find($id);
-        $posts = Post::where('user_id',$id)->get();
+        $posts = Post::where('user_id',$id)->get()->sortByDesc('created_at');
         return view('pages.user', ['user' => $user, 'posts' => $posts]);
 
     }
