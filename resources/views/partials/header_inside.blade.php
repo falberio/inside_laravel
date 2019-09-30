@@ -31,7 +31,6 @@
 				<li><a href="../areas"><p>AREAS</p></a></li>
 				<li><a href="../groups"><p>GRUPOS</p></a></li>
 				<li><a href="../wiki"><p>WIKI</p></a></li>
-				<li><a href="../chat"><p>CHAT</p></a></li>
 				<li class="btn-menu-profile"><img class="user" src="../{{Auth::user()->photo}}" alt=""></li>
 				<li>
 					<div id="wrp-change-theme">
