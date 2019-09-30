@@ -2397,6 +2397,7 @@ header .icon-toggle, header .icon-exit{
 #article .article .info .author img{
 	width: 60px;
 	height: 60px;
+	border-radius: 50%;
 }
 
 #article .article .info .author a{
