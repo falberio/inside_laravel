@@ -42,7 +42,7 @@
 		<div class="btn-servicio btn-servicio-redsocial">RED SOCIAL</div>
 		<div class="btn-servicio btn-servicio-grupos">GRUPOS</div>
 		<div class="btn-servicio btn-servicio-adp">ADP</div>
-		<div class="btn-servicio btn-servicio-dashboard">DASHBOARD</div>
+		<div class="btn-servicio btn-servicio-dashboard">WIKI</div>
 	</div>
 
 		<div class="servicio servicio-chat col-md-12">

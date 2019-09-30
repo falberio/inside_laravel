@@ -45,7 +45,7 @@
         <div class="btn-servicio btn-servicio-redsocial">RED SOCIAL</div>
         <div class="btn-servicio btn-servicio-grupos">GRUPOS</div>
         <div class="btn-servicio btn-servicio-adp">ADP</div>
-        <div class="btn-servicio btn-servicio-dashboard">DASHBOARD</div>
+        <div class="btn-servicio btn-servicio-dashboard">WIKI</div>
     </div>
 
         <div class="servicio servicio-chat col-md-12">
@@ -85,9 +85,8 @@
         <div class="servicio servicio-dashboard col-md-12">
             <img src="img/waves.png" alt="">
             <div class="wrapper-text col-md-8">
-                <h3>Dashboard</h3>
-                <p>Muchas empresas al oír el término dicen: “pero si ya estoy en Facebook”, y los más avanzados: “pero si ya tengo una estrategia en Social Media”.
-                Las estrategias en social media forman parte de la comunicación y suelen situarse en los departamentos de marketing o comunicación de las empresas.</p>
+                <h3>Wiki</h3>
+                <p>La documentación del trabajo, los procedimientos y las reglas, es fundamental para una buena organización interna empresarial. En la wiki, los colaboradores van a poder encontrar artículos relacionados con cada necesidad.</p>
             </div>
         </div>
     
